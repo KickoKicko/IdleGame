@@ -1,0 +1,14 @@
+p{
+    color: green;
+}
+
+#mainButton{
+color: aqua;
+height: 10vh;
+width: 20vw;
+font-size: 5vh;
+}
+
+#moneyDisplay{
+    font-size: 5vh;
+}
