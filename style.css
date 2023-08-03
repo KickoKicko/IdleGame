@@ -12,3 +12,16 @@ font-size: 5vh;
 #moneyDisplay{
     font-size: 5vh;
 }
+
+#loaderBorder{
+    width: 20vw;
+    height: 10vh;
+    border: black;
+    background-color: blue;
+}
+
+#loader{
+    background-color: red;
+    height:100%;
+    width: 50%;
+}
