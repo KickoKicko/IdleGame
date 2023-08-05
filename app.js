@@ -3,6 +3,10 @@ let test2 = 0;
 const mainButton = document.getElementById("mainButton");
 mainButton.addEventListener("click",add_money);
 
+
+
+
+
 function add_money(){
 money = money+1;
 update_money();
