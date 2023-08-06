@@ -27,6 +27,7 @@ font-size: 5vh;
 }
 
 #singleMonsterDisplay{
+    display: none;
     background-color: crimson;
     width: 80%;
     height: 50vh;

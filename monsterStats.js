@@ -23,6 +23,7 @@ class Monster{
     set setStatus(s){
         this.status = s;
     }
+    
 
     show(){
         console.log(this.name + this.type + this.resource + this.rarity+this.income);
@@ -35,7 +36,7 @@ class Arguu extends Monster{
         this.name = "Arguu";
         this.type = "Fire";
         this.resource = "Gunpowder";
-        this.monsterId = 1;
+        this.monsterId = 0;
         this.rarity = rarity;
 
         if(rarity == "Common"){
