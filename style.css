@@ -26,6 +26,20 @@ font-size: 5vh;
     width: 50%;
 }
 
+#singleMonsterDisplay{
+    background-color: crimson;
+    width: 80%;
+    height: 50vh;
+    margin: auto;
+}
+
+#close-singleMonsterDisplay{
+    background-color: blue;
+    width: 10%;
+    height: 10%;
+    float: right;
+}
+
 #allMonsterHolder{
     display: flex;
     flex-wrap: wrap;
@@ -49,4 +63,8 @@ font-size: 5vh;
 .monsterCard p{
     color: chartreuse;
     margin-top: 20%;
+}
+
+.monsterName{
+    color: cadetblue;
 }
