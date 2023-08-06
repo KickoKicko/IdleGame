@@ -2,10 +2,17 @@ let money = 0;
 let test2 = 0;
 let myMonsterArray = [];
 let allMonsterTypesByID = ["Arguu", "Ladlu", "Tryon"];
-let singleMonsterDisplay = null;
-const mainButton = document.getElementById("mainButton");
-mainButton.addEventListener("click",add_money);
+let singleMonsterDisplay = "a";
 
+document.getElementById("mainButton").addEventListener("click",add_money);
+document.getElementById("close-singleMonsterDisplay").addEventListener("click",function(){singleMonsterDisplayFunction(null)});
+
+
+let monsterCards = document.getElementsByClassName("monsterCard");
+
+for(let i = 0;i<monsterCards.length;i++){
+ monsterCards[i].addEventListener("click", function(){singleMonsterDisplayFunction(monsterCards[i].children[0].innerHTML)});
+}
 
 
 
@@ -22,6 +29,18 @@ updateMonsterCards();
 function update_money(){
     var e = document.getElementById("moneyDisplay");
     e.innerHTML = "Money: "+money;
+}
+
+function singleMonsterDisplayFunction(monster){
+    console.log(monster);
+    let x = document.getElementById("singleMonsterDisplay");
+    if(monster == null){
+        x.style.display = "none";
+    }
+    else{
+        x.style.display = "block";
+        x.children[1].innerHTML = monster;
+    }
 }
 
 function test(){
