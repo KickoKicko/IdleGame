@@ -1,5 +1,11 @@
-p{
-    color: greenyellow;
+body{
+    background-color: rgb(46, 85, 87);
+}
+
+header{
+    background-color: black;
+    color: white;
+    font-size: 2vw;
 }
 
 #mainButton{
@@ -29,6 +35,9 @@ font-size: 5vh;
 #singleMonsterDisplay{
     display: none;
     background-color: crimson;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: black;
+    font-size: 1vw;
     width: 80%;
     height: 50vh;
     margin: auto;
@@ -46,7 +55,7 @@ font-size: 5vh;
     flex-wrap: wrap;
     width: 90%;
     margin: 5%;
-    background-color: aqua;
+    background-color: rgb(78, 141, 141);
     padding-top: 1vh;
 }
 
@@ -58,14 +67,47 @@ font-size: 5vh;
     margin-bottom: 2vh;
     width: 10%;
     height: 17vh;
-    background-color: blueviolet;
+    background-color:darkgray;
 }
 
 .monsterCard p{
-    color: chartreuse;
+    color: black;
+    font: 1em sans-serif;
     margin-top: 20%;
 }
 
 .monsterName{
     color: cadetblue;
+}
+
+
+#zooTableDiv{
+    background-color: white;
+    width: 90%;
+    margin: auto;
+    margin-top: 5%;
+}
+
+#zooTable{
+    width: 100%;
+}
+
+.barHoldingColumn{
+    width: 50%;
+}
+
+.outerBar{
+    width: 100%;
+    margin: auto;
+    height: 3vh;
+    background-color: black;
+}
+.progressBar{
+    width: 0%;
+    height: 100%;
+    background-color: red;
+}
+
+td{
+    text-align: center;
 }
